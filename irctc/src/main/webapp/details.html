@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>passenger_details</title>
+</head>
+<style>
+    /* Style for the heading */
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* Style for the form */
+    form {
+        text-align: center;
+        margin: 50px auto;
+        width: 400px;
+    }
+
+    /* Style for the input fields */
+    input[type="text"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    /* Style for the submit button */
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+<body>
+<h2 style="position:relative; left: 10px; top: 10px;">Passenger details</h2>
+<form action="details">
+	Enter passenger name:&nbsp;&nbsp;<input type="text" name="name" required><br><br>
+	Enter passenger gender:<input type="text" name="gender" required><br><br>
+	Enter passenger age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age" required><br><br>
+	Enter preferred seat:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="seat" required ><br><br>
+	<input type="submit">
+</form>
+</body>
+</html>

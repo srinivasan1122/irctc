@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>irctc_city</title>
+</head>
+<style>
+    /* Style for the heading */
+    h1 {
+        font-size: 48px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* Style for the subheading */
+    h3 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* Style for the form */
+    form {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* Style for the input fields */
+    input[type="text"], input[type="date"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Style for the submit button */
+    input[type="submit"] {
+        width: 100px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<body>		
+<h1>Train Search</h1>
+
+<h3 >Choose your FROM and TO city:</h3>
+
+	<form action="place_irctc">
+		Enter FROM city:<input type="text" name="from" required><br><br>
+		Enter TO city:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="to" required><br><br>
+		Select date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="date" required><br><br>
+		<input type="submit">  
+	</form>                                             	 
+</body>
+</html>

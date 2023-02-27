@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>irctc</display-name>
+  
+  <servlet>
+  <servlet-name>login info</servlet-name>
+  <servlet-class>irctc.irctc_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login info</servlet-name>
+  <url-pattern>/login_irctc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>irctc_city</servlet-name>
+  <servlet-class>irctc.irctc_train</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>irctc_city</servlet-name>
+  <url-pattern>/place_irctc</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>login check</servlet-name>
+  <servlet-class>irctc.irctc_check</servlet-class>
+  </servlet>
+  <servlet-mapping>	
+  <servlet-name>login check</servlet-name>
+  <url-pattern>/irctc_check</url-pattern>
+  </servlet-mapping>
+  
+<servlet>
+  <servlet-name>details</servlet-name>
+  <servlet-class>irctc.details</servlet-class>
+  </servlet>
+  <servlet-mapping>	
+  <servlet-name>details</servlet-name>
+  <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+</web-app>
